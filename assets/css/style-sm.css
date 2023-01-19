@@ -1,0 +1,128 @@
+
+.desktop-hide {}
+
+.mobile-hide {
+    display: none;
+}
+
+.pos-4 { transform: translateX(0) }
+.pos-5 { transform: translateX(0) }
+
+/* ================ FOCUS ================ */
+
+/* MODALITA */
+
+.mods {
+    width: 60%;
+    justify-content: space-around;
+}
+
+.mod {
+    font-size: .8rem;
+    width: 30%;
+}
+
+/* MOBILE */
+@media screen and (max-width: 490px) {
+    .mods {
+        top: 2rem;
+        width: 100%;
+        height: 22%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .mod {
+        font-size: 1.2rem;
+        width: 85%;
+        margin: .3rem 0;
+    }
+}
+
+/* TIMER */
+.timer {
+    top: 22rem;
+    width: 15rem;
+    height: 15rem;
+    font-size: 2.75rem;
+}
+
+/* CONTROLLI */
+.control {
+    top: 33rem;
+}
+
+.control-btn {
+    scale: 140%;
+}
+
+/* ================ DESKTOP - MOBILE MODE ================ */
+
+@media screen and (min-width: 769px) {
+
+    .mobileMod {
+        display: block;
+    }
+
+}
+
+/* ================ INFO ================ */
+
+.mob-showInfo {
+    position: absolute;
+    bottom: 2rem;
+    right: 2.5rem;
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    color: var(--clr-accent);
+    cursor: pointer;
+    z-index: 102;
+}
+
+.info {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--clr-background);
+    z-index: 101;
+}
+
+.showen {
+    display: block;
+}
+
+.info-imgs {
+    top: 4rem;
+    width: 40%;
+    display: flex;
+    height: 2rem;
+}
+
+.info-logo, .info-logotype {
+    height: 2.5rem;
+}
+
+
+.info-texts {
+    margin-top: 11rem;
+}
+
+.info-text {
+    width: 75%;
+    margin: 2.3rem 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 490px) {
+    .info-texts {
+        margin-top: 8rem;
+    }
+
+    .info-text {
+        width: 70%;
+        margin: 2.3rem 50%;
+        transform: translateX(-50%);
+    }
+}
