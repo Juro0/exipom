@@ -36,7 +36,7 @@ coloro che creeranno una pull request successivamente accettata, verranno menzio
 
 ## da fare
 
- - possibilità di caricare e scaricare temi tramite files .json
+ - temi prestabiliti
 
 ## problemi
  non sono ancora stati riscontrati bug importanti nel codice, nel caso ne troviate uno, si prega di aprire una issues.
@@ -55,7 +55,7 @@ those who create a pull request that is subsequently accepted will be mentioned 
 
 ## todo
 
- - ability to upload and download themes via .json files
+ - themes
 
 ## bugs
 no major bugs have been found in the code yet, in case you find one, please open an issue.
