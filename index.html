@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>EXIPOM &bull; juri gemignani</title>
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="assets/css/style-lg.css">
+        <link rel="stylesheet" href="assets/css/style-sm.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <!-- ================ FOCUS ================ -->
+
+        <div class="clock page pos-3">
+
+            <span class="mods">
+                <button class="mod active" id="focus">focus</button>
+                <button class="mod" id="short">short break</button>
+                <button class="mod" id="long">long break</button>
+            </span>
+
+            <div class="timer">
+                25:00
+            </div>
+
+            <div class="control">
+                <button class="control-btn" id="play"><i data-feather="play"></i></button>
+                <button class="control-btn" id="pause"><i data-feather="pause"></i></button>
+                <button class="control-btn" id="stop"><i data-feather="x"></i></button>
+            </div>
+
+        </div>
+
+        <!-- ================ SETTINGS ================ -->
+
+        <div class="settings page pos-4 mobile-hide">
+            
+            <div class="cols">
+
+                <div class="col col1">
+
+                    <!-- CONFIGURATION -->
+                    <p class="settings-title">Configuration</p>
+                    
+                    <span class="settings-sets">
+                        <p class="settings-set" id="set1">automaticaly start next timer</p>
+                        <input class="settings-check" type="checkbox" id="check1">
+                    </span>
+                    
+                    <span class="settings-sets">
+                        <p class="settings-set" id="set2">send notifications</p>
+                        <input class="settings-check" type="checkbox" id="check2">
+                    </span>
+
+                    <!-- TIMERS -->
+                    <p class="settings-title">Timers</p>
+                    
+                    <span class="settings-sets">
+                        <p class="settings-set" id="set3">duration of focus (minutes)</p>
+                        <input class="settings-number" type="number" id="check3">
+                    </span>
+                    
+                    <span class="settings-sets">
+                        <p class="settings-set" id="set4">duration of short break (minutes)</p>
+                        <input class="settings-number" type="number" id="check4">
+                    </span>
+                    
+                    <span class="settings-sets">
+                        <p class="settings-set" id="set5">duration of long break (minutes)</p>
+                        <input class="settings-number" type="number" id="check5">
+                    </span>
+                    
+                </div>
+                
+                <div class="col col2">
+    
+                    <!-- COLORS -->
+                    <p class="settings-title">Colors</p>
+                    
+                    <span class="settings-sets">
+                        <p class="settings-set" id="set6">focus timer color</p>
+                        <input class="settings-color" type="color" id="check6">
+                    </span>
+                    
+                    <span class="settings-sets">
+                        <p class="settings-set" id="set7">short break timer color</p>
+                        <input class="settings-color" type="color" id="check7">
+                    </span>
+                    
+                    <span class="settings-sets">
+                        <p class="settings-set" id="set8">long break timer color</p>
+                        <input class="settings-color" type="color" id="check8">
+                    </span>
+                    
+                    <span class="settings-sets">
+                        <p class="settings-set" id="set9">background color</p>
+                        <input class="settings-color" type="color" id="check9">
+                    </span>
+
+                    <span class="settings-sets">
+                        <p class="settings-set" id="set10">secondary color</p>
+                        <input class="settings-color" type="color" id="check10">
+                    </span>
+
+                    <span class="settings-sets">
+                        <p class="settings-set" id="set11">title color</p>
+                        <input class="settings-color" type="color" id="check11">
+                    </span>
+
+                    <span class="settings-sets">
+                        <p class="settings-set" id="set12">text color</p>
+                        <input class="settings-color" type="color" id="check12">
+                    </span>
+
+                    <span class="settings-sets">
+                        <p class="settings-set" id="set13">accent color</p>
+                        <input class="settings-color" type="color" id="check13">
+                    </span>
+
+                </div>
+
+            </div>
+
+            <span class="settings-btn">
+                <button class="settings-save">save</button>
+                <button class="settings-default">reset</button>
+            </span>
+
+        </div>
+
+        <!-- ================ INFO ================ -->
+
+        <div class="info page pos-5">
+
+            <span class="info-imgs">
+                <img src="assets/img/logo.png" class="info-logo">
+                <img src="assets/img/logotype.png" class="info-logotype">
+            </span>
+            
+            <div class="info-texts">
+
+                <p class="info-text">v1.0.0  (<a href="https://github.com/juro0" target="blank">release history</a>)</p>
+
+                <p class="info-text">
+                    EXIPOM was created by <a target="blank" href="https://juro0.github.io/">Juri Gemignani</a> during January 2023.
+                </p>
+    
+                <p class="info-text">
+                    Idea and design inspired by <a target="blank" href="https://splode.github.io/pomotroid/">Pomotroid</a> (here <a target="blank" href="https://github.com/Splode/pomotroid">Github Repo</a> ) and <a target="blank" href="https://studywithme.io/">Studywithme</a>.
+                </p>
+    
+                <p class="info-text">
+                    Icons from <a target="blank" href="https://iconscout.com/unicons/">Iconscout</a> and <a target="blank" href="https://feathericons.com/">Feather icons</a>
+                </p>
+    
+                <p class="info-text">
+                    This project is open-source and accessible by everyone, who want to modify this can create a fork on the <a target="blank" href="https://github.com/juro0">Github Repo</a>. Any fork cannot be sold or passed off as their own.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- ================ MENU (z101) ================ -->
+
+        <div class="menu mobile-hide">
+            <button class="menu-btn active" id="clock"><i class="uil uil-clock"></i></button>
+            <button class="menu-btn" id="settings"><i class="uil uil-sliders-v-alt"></i></button>
+            <button class="menu-btn" id="info"><i class="uil uil-info-circle"></i></button>
+        </div>
+
+        <button class="mob-showInfo desktop-hide">
+            <i class="uil uil-info-circle"></i>
+        </button>
+
+        <button class="mobileMod mobile-hide">
+            <i class="uil uil-crosshair"></i>
+        </button>
+
+        <!-- ================ JAVASCRIPT ================ -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="assets/js/storage.js"></script>
+        <script src="assets/js/notification.js"></script>
+        <script src="assets/js/timer.js"></script>
+        <script src="assets/js/keyboard.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/mobilemod.js"></script>
+        <script> feather.replace() </script>
+
+    </body>
+
+</html>
