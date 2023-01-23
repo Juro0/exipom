@@ -1,12 +1,12 @@
 
-<p align="center"> <img src="https://github.com/Juro0/exipom/blob/main/assets/img/logotype.png?raw=true"> </p>
+<p align="center"> <img src="https://github.com/Juro0/exipom/blob/main/logotype.png?raw=true"> </p>
 <h3 align="center"> a simple pomodoro site <br> </h3>
 
-<p align="center"> <img src="https://github.com/Juro0/exipom/blob/main/assets/img/timers.png?raw=true"> </p>
+<p align="center"> <img src="https://github.com/Juro0/exipom/blob/main/timers.png?raw=true"> </p>
 
 *(exchangeable themes coming soon...)*
 
-<p align="center"> <img src="https://github.com/Juro0/exipom/blob/main/assets/img/themes.png?raw=true"> </p>
+<p align="center"> <img src="https://github.com/Juro0/exipom/blob/main/themes.png?raw=true"> </p>
 
 # summary
 - [Italiano](#exipom-it)
