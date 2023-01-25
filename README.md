@@ -4,10 +4,6 @@
 
 <p align="center"> <img src="https://github.com/Juro0/exipom/blob/v1.0.0/assets/img/timers.png?raw=true"> </p>
 
-*(exchangeable themes coming soon...)*
-
-<p align="center"> <img src="https://github.com/Juro0/exipom/blob/v1.0.0/assets/img/themes.png?raw=true"> </p>
-
 # summary
 - [Italiano](#exipom-it)
 	- [Descrizione](#descrizione)
