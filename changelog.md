@@ -1,13 +1,13 @@
 
-<p align="center"> <img src="https://github.com/Juro0/exipom/blob/main/assets/img/logotype.png?raw=true"> </p>
+<p align="center"> <img src="https://github.com/Juro0/exipom/blob/v1.0.0/assets/img/logotype.png?raw=true"> </p>
 
 ## v1.1.0
-- in fase di testing
-- nuova schermata temi, con 5 preset di colori salvati in un file .js
+- currently in test
+- new theme window!
 
 ## v1.0.0
-- pubblica
-- tre timer con tempo personalizzabile
-- notifiche e inizio automatico del timer personalizzabili
-- colori personalizzabili
-- impostazioni salvate in localhost
+- public
+- 3 custom timers!
+- customizable notify and autostart of timer
+- customizable colors
+- settings saved in local storage
