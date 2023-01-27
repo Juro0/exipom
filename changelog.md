@@ -2,8 +2,9 @@
 <p align="center"> <img src="https://github.com/Juro0/exipom/blob/v1.0.0/assets/img/logotype.png?raw=true"> </p>
 
 ## v1.1.0
-- currently in test
+- public
 - new theme window!
+- 5 default themes
 
 ## v1.0.0
 - public
