@@ -1,0 +1,231 @@
+
+.desktop-hide {
+    display: inline-block;
+}
+
+.mobile-hide {
+    display: none;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.page.float-page {
+    width: 95%;
+    height: 90%;
+}
+
+.separator {
+    height: 5rem;
+    opacity: 0;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* RESET ALL INPUT */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+/* ================ PAGES ANIMATIONS ================ */
+
+.pos-1 { display: none; }
+.pos-2 { display: none; }
+.pos-3 { display: inline-block; }
+.pos-4 { display: none; }
+.pos-5 { display: none; }
+
+/* ================ MENU ================ */
+
+.menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--clr-secondary);
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    z-index: 101;
+}
+
+/* ================ FOCUS ================ */
+
+/* MODALITA */
+.mods {
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.mod {
+    width: 100%;
+    height: 100%;
+    margin: .3rem 0;
+}
+
+
+/* TIMER */
+.timer {
+    top: 21rem;
+    width: 15rem;
+    height: 15rem;
+}
+
+/* CONTROLLI */
+.control {
+    top: 32rem;
+    width: 18rem;
+}
+
+.control-btn {
+    scale: 150%;
+}
+
+/* ================ SETTINGS ================ */
+
+.cols {
+    position: static;
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transform: none;
+}
+
+.col {
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.settings-sets {
+    width: 100%;
+}
+
+.settings-title {
+    font-size: 1.3rem;
+}
+
+.settings-set {
+    font-size: 1rem;
+}
+
+.settings-color {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.settings-btn {
+    margin: 2rem 0;
+    padding: 0 3rem;
+    transform: none;
+    position: static;
+    width: 100%;
+}
+
+.settings-theme-button {
+    position: relative;
+    left: 50%;
+    opacity: .8;
+    transform: translateX(-50%);
+}
+
+.settings-theme-button:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* ================ THEME ================ */
+
+.theme-page {
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+}
+
+.shadow {
+    position: fixed;
+}
+
+.all-themes {
+    height: 90%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.theme {
+    margin: 2rem 0;
+    width: 100%;
+    height: 6rem;
+}
+
+.infos {
+    margin-left: 1rem;
+}
+
+.name {
+    font-size: .9rem;
+}
+
+.colors {
+    height: 100%;
+    margin-right: 1rem;
+}
+
+.color {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.theme-close {
+    bottom: 2.2rem;
+    left: 70%;
+    height: 1.5rem;
+}
+
+/* ================ INFO ================ */
+
+.info-imgs {
+    top: 4rem;
+}
+
+.info-logo, .info-logotype {
+    height: 2.5rem;
+    margin: 0 .5rem;
+}
+
+
+.info-texts {
+    margin-top: 10rem;
+}
+
+.info-text {
+    width: 90%;
+    margin: 1.5rem 5%;
+    line-height: 1.5rem;
+}
