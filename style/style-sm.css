@@ -1,0 +1,86 @@
+
+.mobile-hide {
+    display: none;
+}
+
+/* ------------------------------------------- MAIN PAGE */
+
+#timer {
+    margin: 40px 0;
+}
+
+.mode-switch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mode-button {
+    width: 230px;
+    aspect-ratio: 6/1;
+    margin: 11px 0;
+}
+
+.timer-controller {
+    width: 200px;
+}
+
+.timer-control {
+    font-size: 31px;
+}
+
+.options-container {
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+}
+
+.options-button {
+    margin: 0 20px;
+    font-size: 28px;
+}
+
+.options-button:hover {
+    opacity: .7;
+}
+
+.options-button.disabled {
+    opacity: .4;
+}
+
+/* ------------------------------------------- SETTINGS PAGE */
+
+#settings-menu.floating-page {
+    width: 100%;
+    transform: translateX(-101%);
+    border: none;
+    padding: 50px 20px;
+}
+
+#settings-menu.floating-page.active {
+    transform: none;
+}
+
+#menu-close:hover {
+    transform: none;
+    color: var(--clr-neutral);
+}
+
+.settings-line {
+    margin: 50px 0;
+}
+
+input[type='checkbox'].settings-input {
+    width: 17px;
+}
+
+input[type='number'].settings-input {
+    width: 40px;
+    font-size: 16px;
+}
+
+.settings-button {
+    width: 140px;
+    margin-top: 10px;
+}

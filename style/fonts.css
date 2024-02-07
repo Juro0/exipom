@@ -1,0 +1,27 @@
+
+/* roboto-400 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/roboto-400.woff2') format('woff2');
+}
+
+/* roboto-500 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/roboto-500.woff2') format('woff2');
+}
+
+/* bebas-400 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Bebas Neue';
+    font-style: medium;
+    font-weight: 400;
+    src: url('../assets/fonts/bebas-400.woff2') format('woff2');
+}

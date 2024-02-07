@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>exipom &bull; take your time!</title>
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    
+        <link rel="stylesheet" href="style/fonts.css">
+        <link rel="stylesheet" href="style/style-lg.css">
+        <link rel="stylesheet" href="style/style-sm.css" media="screen and (max-width: 630px)">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    </head>
+
+    <body>
+
+        <!-- MAIN PAGE -->
+        <div class="page main-page">
+
+            <!-- options -->
+            <div class="options-container">
+
+                <p class="uil uil-setting options-button" title="settings" id="option-settings"></p>
+
+                <p class="uil uil-paint-tool options-button disabled" title="themes (coming soon...)" id="option-themes"></p>
+                
+                <p class="uil uil-volume options-button" title="toggle volume" id="option-volume"></p>
+                
+                <p class="uil uil-copyright options-button" title="credits" id="option-credits"></p>
+
+            </div>
+            
+            <!-- mode -->
+            <div class="mode-switch">
+
+                <button class="mode-button active" id="mode-focus">focus</button>
+                
+                <button class="mode-button" id="mode-break">break</button>
+                
+                <button class="mode-button" id="mode-lbreak">long break</button>
+
+            </div>
+
+            <!-- timer display -->
+            <p id="timer">12:00</p>
+
+            <!-- controller -->
+            <div class="timer-controller">
+
+                <i class="timer-control uil uil-play" id="control-play"></i>
+                <i class="timer-control uil uil-pause" id="control-pause"></i>
+                <i class="timer-control uil uil-square-shape active" id="control-stop"></i>
+
+            </div>
+
+            <!-- timer counts -->
+            <p id="timer-counts" class="mobile-hide" title="left timers before long break">0/4</p>
+
+        </div>
+
+        <!-- SETTINGS -->
+        <div class="floating-page" id="settings-menu">
+
+            <div class="menu-header">
+
+                <p class="menu-title">Settings</p>
+
+                <i class="uil uil-times" id="menu-close"></i>
+
+            </div>
+
+            <div class="settings-line">
+
+                <label class="settings-desc">Automaticaly start next timer on end</label>
+
+                <input class="settings-input" type="checkbox" id="setting-1">
+
+            </div>
+
+            <div class="settings-line">
+
+                <label class="settings-desc">Send notification on timer end</label>
+
+                <input class="settings-input" type="checkbox" id="setting-2">
+
+            </div>
+
+            <!-- CHECKBOX / NUMBERS -->
+
+            <div class="settings-line">
+
+                <label class="settings-desc">Focus timer duration (in minutes)</label>
+
+                <input class="settings-input" type="number" id="setting-3" value="25">
+
+            </div>
+
+            <div class="settings-line">
+
+                <label class="settings-desc">Break timer duration (in minutes)</label>
+
+                <input class="settings-input" type="number" id="setting-4" value="5">
+
+            </div>
+
+            <div class="settings-line">
+
+                <label class="settings-desc">Long break timer duration (in minutes)</label>
+
+                <input class="settings-input" type="number" id="setting-5" value="15">
+
+            </div>
+
+            <button class="settings-button" id="settings-save">save</button>
+            <button class="settings-button secondary" id="settings-reset">reset</button>
+
+        </div>
+        
+        <script src="script/click-events.js"></script>
+        <script src="script/settings.js"></script>
+        <script src="script/notify.js"></script>
+        <script src="script/timer.js"></script>
+        <script src="script/app.js"></script>
+        
+    </body>
+
+</html>

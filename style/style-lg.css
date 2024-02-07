@@ -1,0 +1,320 @@
+
+:root {
+
+    /* COLORS */
+    --clr-primary: #222224;
+    --clr-secondary: #dc4756;
+    --clr-neutral: #f2f2f2;
+
+    --clr-focus-timer: #dc4756;
+    --clr-break-timer: #5d5af5;
+    --clr-lbreak-timer: #9522e1;
+
+    --clr-play: #46e646e6;
+    --clr-pause: #e6e646e6;
+    --clr-stop: #e64646e6;
+
+    /* FONTS */
+    --fnt-roboto: 'Roboto', sans-serif;
+    --fnt-bebas: 'Bebas Neue', sans-serif;
+
+    /* WEIGHT */
+    --wgt-medium: 500;
+    --wgt-regular: 400;
+
+}
+
+/* ------------------------------------------- GENERAL */
+
+html, body {
+    height: 100%;
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.page.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.floating-page {
+    height: 100%;
+    width: 500px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-501px);
+    background: var(--clr-primary);
+    transition: .3s all ease;
+    z-index: 101;
+}
+
+.floating-page.active {
+    transform: none;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--clr-secondary);
+    border-radius: 10px;
+}
+
+/* INPUT RESET */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ------------------------------------------- MAIN PAGE */
+
+.page.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer {
+    font-family: var(--fnt-bebas);
+    font-size: 120px;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, .3);
+    color: var(--clr-neutral);
+    margin: 60px 0 20px;
+    cursor: default;
+}
+
+.mode-button {
+    width: 120px;
+    aspect-ratio: 3.2/1;
+    margin: 0 13px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(242, 242, 242, .1);
+    font-family: var(--fnt-roboto);
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: var(--clr-neutral);
+    transition: .3s all ease;
+}
+
+.mode-button#mode-focus.active { background: var(--clr-focus-timer) }
+.mode-button#mode-break.active { background: var(--clr-break-timer) }
+.mode-button#mode-lbreak.active { background: var(--clr-lbreak-timer) }
+
+.mode-button:hover {
+    background: rgba(242, 242, 242, .2);
+    cursor: pointer;
+}
+
+.timer-controller {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer-control {
+    font-size: 29px;
+    color: var(--clr-neutral);
+    opacity: .7;
+    transition: .3s all ease;
+}
+
+.timer-control:hover {
+    transform: translateY(-.5px);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.timer-control#control-play.active {color: var(--clr-play); opacity: 1;}
+.timer-control#control-pause.active {color: var(--clr-pause); opacity: 1;}
+.timer-control#control-stop.active {color: var(--clr-stop); opacity: 1;}
+
+#timer-counts {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    font-family: var(--fnt-roboto);
+    font-weight: var(--wgt-medium);
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: var(--clr-neutral);
+    opacity: .7;
+    cursor: default;
+}
+
+.options-container {
+    position: absolute;
+    top: 35px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.options-button {
+    margin: 15px 0;
+    font-size: 25px;
+    color: var(--clr-neutral);
+    opacity: .7;
+    transition: .3s all ease;
+}
+
+.options-button:hover {
+    transform: translateX(1px);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.options-button.disabled {
+    opacity: .4;
+    transform: none;
+    cursor: not-allowed;
+}
+
+.options-button.uil-volume.active::before {
+    content: "\e998";
+}
+
+/* ------------------------------------------- SETTINGS PAGE */
+
+#settings-menu.floating-page {
+    padding: 50px 30px;
+    border-right: 1px solid var(--clr-neutral);
+}
+
+@keyframes shake_animation {
+    0% {transform: translateX(-1px)}
+    25% {transform: translateX(1px)}
+    50% {transform: translateX(-1px)}
+    100% {transform: translateX(1px)}
+}
+
+#settings-menu.floating-page.shake {
+    animation: shake_animation .3s linear;
+}
+
+.menu-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.menu-title {
+    font-family: var(--fnt-bebas);
+    font-size: 45px;
+    letter-spacing: 2.5px;
+    cursor: default;
+}
+
+#menu-close {
+    font-size: 25px;
+    color: var(--clr-neutral);
+    transition: .3s ease all;
+}
+
+#menu-close:hover {
+    transform: scale(130%) rotate(90deg);
+    color: var(--clr-stop);
+    cursor: pointer;
+}
+
+.settings-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.settings-desc {
+    font-family: var(--fnt-roboto);
+    font-size: 16px;
+    color: var(--clr-neutral);
+    opacity: .7;
+}
+
+input[type='checkbox'].settings-input {
+    width: 15px;
+    aspect-ratio: 1/1;
+}
+
+input[type='number'].settings-input {
+    width: 35px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--clr-neutral);
+    text-align: center;
+    font-family: var(--fnt-roboto);
+    font-size: 15px;
+    padding-bottom: 2px;
+    color: var(--clr-neutral);
+    transition: .3s all ease;
+}
+
+input[type='number'].settings-input:focus {
+    outline: none;
+}
+
+.settings-button {
+    width: 130px;
+    aspect-ratio: 3.4/1;
+    margin-right: 25px;
+    border: none;
+    background: rgba(220, 71, 86, .6);
+    border-radius: 5px;
+    font-family: var(--fnt-roboto);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: var(--clr-neutral);
+    transition: .3s ease all;
+}
+
+.settings-button:hover {
+    background: rgba(220, 71, 86, .7);
+    cursor: pointer;
+}
+
+.settings-button.secondary {
+    background: rgba(220, 71, 86, .2);
+}
+
+.settings-button.secondary:hover {
+    background: rgba(220, 71, 86, .3);
+}
