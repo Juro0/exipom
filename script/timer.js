@@ -45,7 +45,7 @@ function timer_ended() {
 
     if(get_settings('play_sounds')) {
 
-        const end_audio = new Audio('../assets/sounds/timer-end.mp3')
+        const end_audio = new Audio('/assets/sounds/timer-end.mp3')
         end_audio.volume = .7
         end_audio.play()
 
