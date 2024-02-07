@@ -28,7 +28,7 @@ function send_notification(content) {
 
     if(get_settings('send_notifications') && document.visibilityState=='hidden'){
         
-        const img = '../assets/img/favicon.png'
+        const img = '/assets/img/favicon.png'
         const title = 'EXIPOM • take your time!'
         
         const notification = new Notification(
