@@ -13,7 +13,9 @@ exipom is a site that offer a timer for the pomodoro technique, where you altern
 ## changelog
 | version code | status | changes |
 |--|--| -- |
-| v1.0.0 | public | the project starts from here! |
+| v1.0.0 | private | the project starts from here! |
+| v1.1.0 | private | added custom themes |
+| v2.0.0 | public | project restarted from scratch! |
 
 ## ideas for future
 - theme page (like the settings page) with some themes that modify the css variables
